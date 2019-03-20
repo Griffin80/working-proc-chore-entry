@@ -2,8 +2,7 @@ from tkinter import *
 import json
 
 
-"""working!!!
-Do not modify!!!"""
+
 
 
 chore_file = 'Class chore file.json'
