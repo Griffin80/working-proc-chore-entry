@@ -26,17 +26,17 @@ class ChoreEntry(Frame):
         super().__init__(*args, **kwargs)
 
         self.chore_name = Entry(self)
-        self.chore_name.grid(row=0)
+        self.chore_name.grid(row=0, column=0)
         self.chore_dorm = Entry(self)
-        self.chore_dorm.grid(row=1)
+        self.chore_dorm.grid(row=0,column=1)
         self.chore_handicap = Entry(self)
-        self.chore_handicap.grid(row=2)
+        self.chore_handicap.grid(row=0,column=2)
 
         self.branch_entry = Entry(self)
-        self.branch_entry.grid(row=3)
+        self.branch_entry.grid(row=0,column=3)
 
         self.button = Button(self, text='button', command=self.add)
-        self.button.grid(row=4)
+        self.button.grid(row=1,columnspan=4)
 
     def add(self):
         new_dict = {self.chore_name.get(): {'dorm': self.chore_dorm.get(), 'handicap': self.chore_handicap.get()}}
