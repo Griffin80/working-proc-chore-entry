@@ -59,7 +59,7 @@ class ChoreEntry(Frame):
                     self.indication_label.configure(text='Already in the system', fg='red')
 
         data_rep = json.dumps(data, indent=2)
-        print('chore added: ', data_rep)
+        #print('chore added: ', data_rep)
 
 
 # class EntryArray(Frame):
